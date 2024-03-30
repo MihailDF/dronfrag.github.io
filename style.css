@@ -4,6 +4,7 @@
 }
 .card{
     display:flex;
+    justify-content: space-between;
 }
 .button-search{
     cursor: pointer;
