@@ -84,3 +84,8 @@
   .custom-dropdown::after {
     color: rgba(0,0,0,.4);
   }
+.iphone {
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: red;
+}
