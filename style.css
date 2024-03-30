@@ -4,9 +4,6 @@
 }
 .card{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 .button-search{
     cursor: pointer;
