@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>Proksy</title>
   </head>
   <body>
-    <div class="main">
     <div><span class="custom-dropdown">
       <select>
         <option>Каталог</option>
@@ -15,6 +15,7 @@
       </select>
     </span>
     </div>
+    <div class="main">
     <div>
       <h1>Proksy</h1>
     </div>
@@ -22,28 +23,50 @@
       <h3>Самый большой магазин электроники!</h3>
     </div>
     <div>
-      <input type="text" placeholder="Введите номер товара:"></input>
+      <input type="text" placeholder="Введите серийный номер товара:"></input>
       <button class="button-search">поиск</button>
     </div>
     <h1>Хиты продаж!</h1>
     <div>
-      <div class="card">
+      <div class="iphone" >
         <img src = "https://www.iphones.ru/wp-content/uploads/2012/09/00-iPhone-5.jpg"/>
-        <p class="card-describe">телефон iphone 5</p>
+        телефон iphone 5
+        <button class="button-buy">Купить</button>
       </div>
-      <div>
+      <div class = "pc">
         <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOgE194kkgqGYgFb2dmfiS77SOdbF-09AtL42E0fUkdA&s"/>
-        <p>компьютер 1488</p>
+        компьютер 1488
+        <button class="button-buy">Купить</button>
       </div>
-      <div>
+      <div class = "sigma">
         <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkK1dn9fefdUTI0AzX4hSwmupS0fvKHMtsGInFqczthA&s"/>
-        <p>телефон sigma</p>
+        телефон sigma
+        <button class="button-buy">Купить</button>
       </div>
-      <div>
+      <div class = "holodos">
         <img src = "https://img.mvideo.ru/Pdb/20080075b.jpg"/>
-        <p>Холодильник суермороз3000</p>
+        Холодильник супермороз3000
+        <button class="button-buy">Купить</button>
+      </div>
+    </div>
+    <div>
+      <h1>Отзывы реальных покупателей</h1>
+      <div>
+        <div class="reviews">Юра: очень классный магазин!</div>
+        <div class="reviews">Вероника: лучший магазин!</div>
+        <div class="reviews">Владимир: вежливый и отзывчивый персонал!</div>
+      </div>
+      <h1>О нас</h1>
+      <div>
+        <div class="describe_of_shop"> У нас 8234 пунктов выдачи! </div>
+        <div class="describe_of_shop"> Выполнено свыше 20млн заказов! </div>
+        <div class="describe_of_shop"> Более 10млн клиентов! </div>
       </div>
     </div>
     </div>
+    <footer style="text-align:center">
+      <p>Мы не несём ответственности за все ваши действия</p>
+    </footer>
+    <script src="./logics.js"></script>
   </body>
 </html>
