@@ -1,23 +1,64 @@
 .main{
-    display:flex;
+    text-align:center;
     justify-content: center;
+    display:inline;
 }
 .card{
-    display: flex;
+  display: inline;
+  text-align:center;
+  width:25% !important; 
+  height:25% !important; 
+  flex-direction: column;
+  justify-content: space-between;
 }
 .button-search{
     cursor: pointer;
 }
-
+.button-buy{
+  cursor: pointer;
+  background-color: orange;
+}
 .card-describe{
     display:flex;
     align-items: center;
-    border:1px solid black;
 }
-
 .reviews{
     align-items:center;
+    display:inline;
+    font-size: 30px;
+    border:black 1px solid;
 }
+.describe_of_shop{
+    align-items:center;
+    display:inline;
+    font-size: 30px;
+    border:black 1px solid;
+}
+.iphone{
+  border: 2px solid black; 
+  border-radius: 20px; 
+  margin-right: 1000px;
+}
+.pc{
+  border: 2px solid black; 
+  border-radius: 20px; 
+  margin-right: 1000px;
+}
+.holodos{
+  border: 2px solid black; 
+  border-radius: 20px; 
+  margin-right: 1000px;
+}
+.sigma{
+  border: 2px solid black; 
+  border-radius: 20px; 
+  margin-right: 1000px;
+}
+
+
+
+
+
 
 
 
@@ -78,6 +119,10 @@
   
   .custom-dropdown::before {
     background-color: rgba(0,0,0,.15);
+  }
+  
+  .custom-dropdown::after {
+    color: rgba(0,0,0,.4);
   }
 
   
