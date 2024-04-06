@@ -27,12 +27,16 @@
     display:inline;
     font-size: 30px;
     border:black 1px solid;
+    padding:10px;
+    margin:4px
 }
 .describe_of_shop{
     align-items:center;
     display:inline;
     font-size: 30px;
     border:black 1px solid;
+    padding:10px;
+    margin:5px;
 }
 .iphone{
   border: 2px solid black; 
@@ -120,11 +124,6 @@
   .custom-dropdown::before {
     background-color: rgba(0,0,0,.15);
   }
-  
-  .custom-dropdown::after {
-    color: rgba(0,0,0,.4);
-  }
-
   
   .custom-dropdown::after {
     color: rgba(0,0,0,.4);
