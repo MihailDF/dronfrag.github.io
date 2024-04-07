@@ -7,7 +7,7 @@ let iphone = document.querySelector(".iphone")
 let holodos = document.querySelector(".holodos")
 let sigma = document.querySelector(".sigma")
 let pc = document.querySelector(".pc")
-let button_buy= document.querySelector(".button-buy")
+let button_buy= document.querySelectorAll(".button-buy")
 // 1 - первый телефон, 2 - компьютер, 3- сигма телефон, 4- холодильник
 search_button.addEventListener('click', function(){
     let ser_number =document.querySelector("input").value
