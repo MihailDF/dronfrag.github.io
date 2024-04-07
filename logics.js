@@ -7,10 +7,7 @@ let iphone = document.querySelector(".iphone")
 let holodos = document.querySelector(".holodos")
 let sigma = document.querySelector(".sigma")
 let pc = document.querySelector(".pc")
-let button_buy1 = document.querySelector(".button-buy")
-let button_buy2 = document.querySelector(".button-buy")
-let button_buy3 = document.querySelector(".button-buy")
-let button_buy4 = document.querySelector(".button-buy")
+let button_buy= document.querySelector(".button-buy")
 // 1 - первый телефон, 2 - компьютер, 3- сигма телефон, 4- холодильник
 search_button.addEventListener('click', function(){
     let ser_number =document.querySelector("input").value
@@ -41,16 +38,7 @@ search_button.addEventListener('click', function(){
     }
     
 })
-button_buy1.addEventListener("click",function(){
-    alert("Товара нет на складе")
-})
-button_buy2.addEventListener("click",function(){
-    alert("Товара нет на складе")
-})
-button_buy3.addEventListener("click",function(){
-    alert("Товара нет на складе")
-})
-button_buy4.addEventListener("click",function(){
+button_buy.addEventListener("click",function(){
     alert("Товара нет на складе")
 })
 // ('#1').on('change',function(){ не могу понять, как добавить реакцию на выбранный элемент выпадающего списка
