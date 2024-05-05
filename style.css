@@ -3,6 +3,9 @@
     justify-content: center;
     display:inline;
 }
+.hits{
+  justify-content: center;
+}
 .card{
   display: inline;
   text-align:center;
@@ -14,50 +17,73 @@
 .button-search{
     cursor: pointer;
 }
+.button-search:hover{
+  box-shadow: 2px 2px 2px black;
+}
 .button-buy{
+  height: 100px;
+  width: 200px;
+  font-size: xx-large;
   cursor: pointer;
   background-color: orange;
+}
+.button-buy:hover{
+  background-color: orangered;
+  transition: 7ms;
+  box-shadow: 4px 4px 6px black;
+  transform: scale(1.2);
 }
 .card-describe{
     display:flex;
     align-items: center;
 }
 .reviews{
+  justify-content: space-between;
     align-items:center;
     display:inline;
-    font-size: 30px;
+    font-size: 20px;
     border:black 1px solid;
     padding:10px;
-    margin:4px
+    margin:4px;
+    width:100px;
+    margin:1px;
+}
+.reviews:hover{
+  background-color:aqua;
 }
 .describe_of_shop{
     align-items:center;
     display:inline;
-    font-size: 30px;
+    font-size: 20px;
     border:black 1px solid;
     padding:10px;
     margin:5px;
 }
+
 .iphone{
   border: 2px solid black; 
   border-radius: 20px; 
-  margin-right: 1000px;
+  margin-right: 50%;
 }
 .pc{
   border: 2px solid black; 
   border-radius: 20px; 
-  margin-right: 1000px;
+  margin-right: 50%;
+
 }
 .holodos{
   border: 2px solid black; 
   border-radius: 20px; 
-  margin-right: 1000px;
+  margin-right: 50%;
+
 }
 .sigma{
   border: 2px solid black; 
   border-radius: 20px; 
-  margin-right: 1000px;
+  margin-right: 50%;
+
 }
+
 
 
 
