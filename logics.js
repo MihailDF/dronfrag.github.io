@@ -7,42 +7,72 @@ let iphone = document.querySelector(".iphone")
 let holodos = document.querySelector(".holodos")
 let sigma = document.querySelector(".sigma")
 let pc = document.querySelector(".pc")
-let button_buy= document.querySelector(".button-buy")
+let button_buy = document.querySelectorAll(".button-buy")
 // 1 - первый телефон, 2 - компьютер, 3- сигма телефон, 4- холодильник
 search_button.addEventListener('click', function(){
     let ser_number =document.querySelector("input").value
-    if(ser_number == 1){
+    if(ser_number == 1 || ser_number=="телефон iphone" || ser_number=="iphone"){
         holodos.style.display = 'none'
         sigma.style.display = 'none'
         pc.style.display = 'none'
+        iphone.style.display = 'contents'
     }else{
-        if(ser_number==2){
+        if(ser_number==2 || ser_number=="компьютер"){
             iphone.style.display ="none"
             holodos.style.display = 'none'
             sigma.style.display = 'none'
+            pc.style.display = 'contents'
         }else{
-            if(ser_number==3){
+            if(ser_number==3 || ser_number=="телефон сигма" || ser_number=="sigma"){
                 iphone.style.display ="none"
                 holodos.style.display = 'none'
                 pc.style.display = 'none'
+                sigma.style.display = 'contents'
             }else{
-                if(ser_number==4){
+                if(ser_number==4 || ser_number=="холодильник" || ser_number=='холодильники'){
                     iphone.style.display ="none"
                     sigma.style.display = 'none'
                     pc.style.display = 'none'
+                    holodos.style.display = 'contents'
                 }else{
-                    alert("Товар не найден")
+                    if(ser_number=="телефоны" || ser_number=="телефон"){
+                        holodos.style.display = 'none'
+                        pc.style.display = 'none'
+                        iphone.style.display = 'contents'
+                        sigma.style.display = 'contents'
+                    }else{
+                        if(ser_number=='всё' || ser_number=='ничего' || ser_number==" "){
+                            holodos.style.display = 'contents'
+                            pc.style.display = 'contents'
+                            iphone.style.display = 'contents'
+                            sigma.style.display = 'contents'
+                        }else{
+                            alert("Товар не найден")}
+                    }
                 }
             }
         }
     }
     
 })
-button_buy.addEventListener("click",function(){
-    alert("Товара нет на складе")
+for(let i=button_buy.length;i!=0;i-=1){
+    button_buy[i-1].addEventListener("click",function(){
+        alert("Товара нет на складе")
+    })
+    document.addEventListener('mousemove', function(e) {
+    let dx = e.pageX - window.innerWidth / 2
+    let dy = e.pageY - window.innerHeight / 2
+    let angleX = 30 * dx / window.innerWidth / 2
+    let angleY = 30 * dy / window.innerHeight / 2
+    button_buy[i-1].style.transform = `rotateX(${-angleY}deg) rotateY(${angleX}deg)`
 })
-// ('#1').on('change',function(){ не могу понять, как добавить реакцию на выбранный элемент выпадающего списка
-//     if($(this).value() == 1){
-//         alert("телефоны")
-//     }
-// })
+}
+
+let hits = document.querySelector('.hits')
+document.addEventListener('mousemove', function(e) {
+    let dx = e.pageX - window.innerWidth / 2
+    let dy = e.pageY - window.innerHeight / 2
+    let angleX = 180 * dx / window.innerWidth / 2
+    let angleY = 180 * dy / window.innerHeight / 2
+    hits.style.transform = `rotateX(${-angleY}deg) rotateY(${angleX}deg)`
+})
